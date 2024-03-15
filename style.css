@@ -1,0 +1,87 @@
+/* Main container */
+.main-container {
+    align-items: center; /* Align items vertically center */
+    display: flex; /* Display as flex container */
+    height: 100vh; /* Set height to 100% of viewport height */
+    justify-content: center; /* Align content horizontally center */
+}
+
+/* Container for the painting with grid layout */
+.painting-container {
+    background-color: #323437; /* Set background color */
+    border: #323437 0.8rem solid; /* Set border color and thickness */
+    display: grid; /* Display as grid */
+    gap: 0.4rem; /* Set gap between grid items */
+    grid-template-columns: repeat(10, 2.65rem); /* Set 10 columns with width 2.65rem */
+    grid-template-rows: 2.8rem 1.5rem 3.65rem repeat(2, 2.2rem) repeat(4, 3.2rem) repeat(2, 2.2rem) 3.65rem 1.5rem 2.8rem; /* Set grid rows with varying heights */
+    height: 42.8rem; /* Set height */
+    width: 30rem; /* Set width */
+}
+
+/* *************************************************************************** */
+
+/* Cell Colours*/
+
+/* Black background cells */
+#cell7, #cell11, #cell37, #cell33, #cell36 {
+    background-color: black; /* Set background color to black */
+}
+
+/* Yellow background cells */
+#cell10, #cell34, #cell35, #cell19, #cell20, #cell22, #cell23, #cell2, #cell43 {
+    background-color: yellow; /* Set background color to yellow */
+}
+
+/* Red background cells */
+#cell15, #cell15, #cell26, #cell8 {
+    background-color: red; /* Set background color to red */
+}
+
+/* Skyblue background cells */
+#cell27, #cell16, #cell30 {
+    background-color: skyblue; /* Set background color to skyblue */
+}
+
+/* White background  cells*/
+.cell {
+    background-color: aliceblue; /* Set default background color */
+}
+
+/* *************************************************************************** */
+
+/* Grid cell specific styling */
+
+/* Spanning 3 rows */
+#cell1, #cell29, #cell39, #cell9 {
+    grid-row: span 3; /* Span 3 rows */
+}
+
+/* Spanning 3 columns */
+#cell2, #cell3, #cell42, #cell43 {
+    grid-column: span 3; /* Span 3 columns */
+}
+
+/* Spanning 2 columns */
+#cell4, #cell41, #cell10, #cell14, #cell21, #cell24, #cell28, #cell18, #cell19 {
+    grid-column: span 2; /* Span 2 columns */
+}
+
+/* Spanning 2 rows */
+#cell5, #cell31, #cell32, #cell33, #cell34, #cell40, #cell11, #cell12, #cell13, #cell17, #cell19, #cell20, #cell22, #cell25 {
+    grid-row: span 2; /* Span 2 rows */
+}
+
+/* Spanning 2 rows and 2 columns */
+#cell6, #cell7, #cell37, #cell38, #cell15, #cell16, #cell23, #cell26, #cell27 {
+    grid-row: span 2; /* Span 2 rows */
+    grid-column: span 2; /* Span 2 columns */
+}
+
+/* Spanning 4 rows and 4 columns */
+#cell8, #cell30 {
+    grid-row: span 4; /* Span 4 rows */
+    grid-column: span 4; /* Span 4 columns */
+}
+
+
+
